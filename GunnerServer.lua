@@ -31,8 +31,8 @@ local function fired(player: Player, fireDirection: Vector3, gunType)
 	end
 	
 	if gunType ~= "Coax" then
-		--vehicle.GunnerSystem.Gun.TurretAttachment.Flash:Emit(1)
-		--vehicle.GunnerSystem.Gun.TurretAttachment.Smoke:Emit(120)
+		vehicle.GunnerSystem.Gun.TurretAttachment.Flash:Emit(1)
+		vehicle.GunnerSystem.Gun.TurretAttachment.Smoke:Emit(120)
 		
 		gunnerSystem.AwaitingRound.Value = true
 		gunnerSystem.LoadedRound.Value = ""
